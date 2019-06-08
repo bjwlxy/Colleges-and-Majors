@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery.js" type="text/javascript"></script>
+    <script src="data.js" type="text/javascript"></script>
+    <script src="pro.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="uk-panel uk-panel-box bg-w content-box-panel-border">
+    <div class="uk-text-center content-box-panel-title">
+        <span>专业信息</span>
+    </div>
+    <div data-toggle="distpicker">
+        <form class="uk-form">
+            <div class="uk-form-row">
+                <label class="sr-only" for="new_department">院系</label>
+                <select class="form-control" id="new_department"
+                        name="department">
+                    <option value="{$student.department}"
+                            selected></option>
+                </select>
+                <label class="sr-only" for="new_grade">年级</label>
+                <select class="form-control" id="new_grade"
+                        name="grade">
+                    <option value="{$student.grade}" selected></option>
+                </select>
+                <label class="sr-only" for="new_profession">专业</label>
+                <select class="form-control" id="new_profession"
+                        name="profession">
+                    <option value="{$student.pro}" selected></option>
+                </select>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
